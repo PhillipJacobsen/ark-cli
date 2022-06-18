@@ -344,7 +344,7 @@ async function connectRelay() {
             // Step 2: Create and Sign the transaction
             if ('smartbridge' in argv) {
                 transaction = Transactions.BuilderFactory.transfer()
-                    .version(3)
+                    .version(2)
                     .nonce(senderNonce.toFixed())
                     .recipientId(recipientWalletAddress)
                     .amount(amount)
@@ -353,7 +353,7 @@ async function connectRelay() {
                     .sign(passphrase);
             } else {
                 transaction = Transactions.BuilderFactory.transfer()
-                    .version(3)
+                    .version(2)
                     .nonce(senderNonce.toFixed())
                     .recipientId(recipientWalletAddress)
                     .amount(amount)
@@ -434,7 +434,7 @@ async function connectRelay() {
             let transaction = {};
             // Step 2: Create and Sign the transaction
                 transaction = Transactions.BuilderFactory.ipfs()
-                    .version(3)
+                    .version(2)
                     .nonce(senderNonce.toFixed())
                     .ipfsAsset(ipfsHash)
                     .fee(argv.fee)
