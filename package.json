@@ -1,0 +1,20 @@
+{
+  "name": "ark-cli",
+  "version": "1.0.0",
+  "description": "Example cli using ARK SDK",
+  "main": "bin/index.js",
+  "bin": {
+    "ark-cli": "./bin/index.js"
+  },
+  "author": "pj",
+  "license": "ISC",
+  "dependencies": {
+    "@arkecosystem/client": "^3.0.0",
+    "@arkecosystem/crypto": "^3.3.2",
+    "chalk": "4.1.2",
+    "is-ipfs": "^6.0.2",
+    "yargs": "^17.5.1"
+  },
+  "nodeIP": "https://dapi.ark.io/api",
+  "network": "testnet"
+}
