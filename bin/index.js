@@ -4,8 +4,8 @@ const isIPFS = require("is-ipfs")   // used for verifying valid IPFS hash
 const nodeIP = package.nodeIP;      // retrieve ip address of relay node from package.json
 const network = package.network;    // retrieve network type (mainnet or testnet) from package.json
 const chalk = require("chalk");
-const infoColor = chalk.green;
-const resultColor = chalk.bgGreen;
+const infoColor = chalk.yellow;
+const resultColor = chalk.green;
 const errorColor = chalk.bold.bgRed;
 const yargs = require("yargs");
 

@@ -2,13 +2,26 @@
 
 This project is intended to provide an example of how to integrate the [ARK.io Blockchain](https://ark.io/) SDK into a node.js application. It implements a command line interface to perform tasks such as check wallet balance, sign / verify messages, and send transactions.
 
-## Installation
+## Installation on Ubuntu
+1. Install build essential tools
+`sudo apt install build-essential`
 
+2. Install Node Using the Node Version Manager(NVM)
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
+`source ~/.bashrc`
+`nvm install v16.15.1`
+
+3. Download ark-cli program.
+`git clone https://github.com/PhillipJacobsen/ark-cli.git`
+
+4. install program
+`cd ark-cli`
 `npm install`
+`npm link`
 
-In package.json file configure the ip address of your ARK relay node via **nodeIP** parameter.
+5. In package.json file configure the ip address of your ARK relay node via **nodeIP** parameter.
 
-In package.json file configure the network(devnet or mainnet) via **network** parameter.
+6. In package.json file configure the network(devnet or mainnet) via **network** parameter.
 
 ## Using the CLI
 
