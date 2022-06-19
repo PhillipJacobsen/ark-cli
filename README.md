@@ -1,6 +1,6 @@
-# Example CLI using ARK Blockchain SDK
+# Example CLI using ARK.io Blockchain SDK
 
-This project is intended to provide an example of how to integrate the [ARK.io Blockchain](https://ark.io/) SDK into a node.js application. It implements a command line interface to perform tasks such as check wallet balance, sign / verify messages, and send transactions.
+This project is intended to provide an example of how to integrate the [ARK.io Blockchain SDK](https://ark.dev/docs/sdk/) into a node.js application. It implements a command line interface to perform tasks such as check wallet balance, sign / verify messages, and send transactions.
 
 ## Installation on Ubuntu
 1. Install build essential tools  
