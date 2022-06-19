@@ -23,7 +23,7 @@ const client = new Connection(nodeIP);
 async function connectRelay() {
     console.log(infoColor("Opening", network, "connection to relay:", nodeIP));
 
-    Managers.configManager.setFromPreset(network);   //set the network (testnet or mainnet)
+    Managers.configManager.setFromPreset(network);   //set the network (devnet or mainnet)
     try {
         const blockchain = await client.get("blockchain");
         Managers.configManager.setHeight(blockchain.body.data.block.height);
